@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祝小兔灰生日快乐！</title>
+    <style>
+        body {
+            font-family: 'PingFang HK', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            background: linear-gradient(270deg, #ff5a5a, #ffaa5a, #5aff5a, #5a5aff, #ff5a5a);
+            background-size: 1000% 1000%;
+            animation: gradient 15s ease infinite;
+            color: white;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            margin: 50px auto;
+        }
+
+        .greeting {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .emojis {
+            font-size: 2em;
+        }
+
+        button {
+            font-family: 'PingFang HK', sans-serif;
+            font-weight: 600;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #333333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.querySelector('.hidden-message').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <img src="avatar.jpg" alt="小兔灰头像" class="avatar">
+    <h1 class="greeting">祝小兔灰生日快乐！</h1>
+    <p class="emojis">🎂🐰🎉🎁🥳</p>
+    <button onclick="showMessage()">点击领取你的生日礼物</button>
+    <p class="hidden-message">请在您的iPhone上打开“Watch”App，查看您的生日礼物🎁</p>
+</body>
+</html>
